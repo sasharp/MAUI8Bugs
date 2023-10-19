@@ -19,10 +19,10 @@
                             <Label Grid.Column="1"
                        Text="{Binding Name}"
                        FontAttributes="Bold" />
-                            <Label Grid.Row="1"
+                       <Line HeightRequest="5"/>
+                                <Label Grid.Row="1"
                        Grid.Column="1"
-                       Text="Description"
-                       FontAttributes="Italic"
+                       Text="↑↑↑ the line is not showing here ↑↑↑"
                        VerticalOptions="End" />
                         </VerticalStackLayout>
                     </Border>
