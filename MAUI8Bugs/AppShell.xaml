@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MAUI8Bugs.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MAUI8Bugs"
+    Title="MAUI8Bugs">
+
+    
+    <!-- Tabs -->
+    <TabBar Route="home" x:Name="home" FlyoutItemIsVisible="False">
+        <Tab Title="Tab1" Route="tab1">
+            <ShellContent
+                Title="Subtab1"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+            <ShellContent Title="Subtab2" Route="subtab2"/>
+            <ShellContent Title="Subtab3" Route="subtab3"/>
+            <ShellContent Title="Subtab4" Route="subtab4"/>
+            <ShellContent Title="Subtab5" Route="subtab5"/>
+
+            <!--ShellContent ContentTemplate="{DataTemplate views:KundenUndFahrzeugePage}" Title="Test"/-->
+        </Tab>
+
+        <Tab Title="Tab2" Route="tab2">
+            <ShellContent Title="Tab2" Route="tab2"/>
+        </Tab>
+
+        <Tab Title="Tab3" Route="tab3">
+            <ShellContent Title="Tab3" Route="tab3"/>
+        </Tab>
+
+        <Tab Title="Tab4" Route="tab4">
+            <ShellContent Title="Tab4" Route="tab4"/>
+        </Tab>
+
+        <Tab Title="Tab5" Route="tab5">
+            <ShellContent Title="Tab5" Route="tab5"/>
+        </Tab>
+    </TabBar>
+</Shell>
