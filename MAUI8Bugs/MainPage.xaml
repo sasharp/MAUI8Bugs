@@ -8,6 +8,8 @@
                                       ShowsResults="true"
                                       DisplayMemberName="Name" />
     </Shell.SearchHandler>
+    <StackLayout>
+        <Button Text="Go to SubPage >" Clicked="Button_Clicked" WidthRequest="500"></Button>
     <CollectionView x:Name="collectionView">
         <CollectionView.ItemTemplate>
             <DataTemplate>
@@ -28,5 +30,5 @@
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>
-
+    </StackLayout>
 </ContentPage>

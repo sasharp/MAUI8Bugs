@@ -1,4 +1,6 @@
-﻿namespace MAUI8Bugs
+﻿using System.Data;
+
+namespace MAUI8Bugs
 {
     public partial class MainPage : ContentPage
     {
@@ -12,6 +14,11 @@
                 new Animal() {Name = "Japanese Monkey"},
                 new Animal() {Name = "Mandrill"}
             };
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync("subpage");
         }
     }
 

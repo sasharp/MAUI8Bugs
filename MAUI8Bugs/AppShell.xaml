@@ -8,18 +8,10 @@
 
     
     <!-- Tabs -->
-    <TabBar Route="home" x:Name="home" FlyoutItemIsVisible="False">
+    <TabBar Route="tab1">
         <Tab Title="Tab1" Route="tab1">
-            <ShellContent
-                Title="Subtab1"
-                ContentTemplate="{DataTemplate local:MainPage}"
-                Route="MainPage" />
-            <ShellContent Title="Subtab2" Route="subtab2"/>
-            <ShellContent Title="Subtab3" Route="subtab3"/>
-            <ShellContent Title="Subtab4" Route="subtab4"/>
-            <ShellContent Title="Subtab5" Route="subtab5"/>
-
-            <!--ShellContent ContentTemplate="{DataTemplate views:KundenUndFahrzeugePage}" Title="Test"/-->
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Title="MainPage"/>
+            <ShellContent ContentTemplate="{DataTemplate local:Page2}" Title="Page2"/>
         </Tab>
 
         <Tab Title="Tab2" Route="tab2">

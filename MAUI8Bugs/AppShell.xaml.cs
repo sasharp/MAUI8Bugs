@@ -4,6 +4,7 @@
     {
         public AppShell()
         {
+            Routing.RegisterRoute("subpage", typeof(SubPage));
             InitializeComponent();
         }
     }
