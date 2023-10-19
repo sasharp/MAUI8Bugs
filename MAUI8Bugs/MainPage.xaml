@@ -19,7 +19,7 @@
                        FontAttributes="Bold" />
                             <Label Grid.Row="1"
                        Grid.Column="1"
-                       Text="{Binding Location}"
+                       Text="Description"
                        FontAttributes="Italic"
                        VerticalOptions="End" />
                         </VerticalStackLayout>
