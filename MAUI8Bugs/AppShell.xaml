@@ -12,6 +12,11 @@
         <Tab Title="Tab1" Route="tab1">
             <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Title="MainPage"/>
             <ShellContent ContentTemplate="{DataTemplate local:Page2}" Title="Page2"/>
+            <ShellContent ContentTemplate="{DataTemplate local:Page2}" Title="Page3"/>
+            <ShellContent ContentTemplate="{DataTemplate local:Page2}" Title="Page4"/>
+            <ShellContent ContentTemplate="{DataTemplate local:Page2}" Title="Page5"/>
+            <ShellContent ContentTemplate="{DataTemplate local:Page2}" Title="Page6"/>
+            <ShellContent ContentTemplate="{DataTemplate local:Page2}" Title="Page7"/>
         </Tab>
 
         <Tab Title="Tab2" Route="tab2">
