@@ -34,5 +34,8 @@
         <Tab Title="Tab5" Route="tab5">
             <ShellContent Title="Tab5" Route="tab5"/>
         </Tab>
+        <Tab Title="Tab6" Route="tab6">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" Title="MainPage"/>
+        </Tab>
     </TabBar>
 </Shell>
