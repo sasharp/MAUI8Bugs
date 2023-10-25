@@ -12,6 +12,11 @@ namespace MAUI8Bugs
                 new Animal() {Name = "Squirrel Monkey"},
                 new Animal() {Name = "Howler Monkey"},
                 new Animal() {Name = "Japanese Monkey"},
+                new Animal() {Name = "Mandrill"},
+                new Animal() {Name = "Capuchin Monkey"},
+                new Animal() {Name = "Squirrel Monkey"},
+                new Animal() {Name = "Howler Monkey"},
+                new Animal() {Name = "Japanese Monkey"},
                 new Animal() {Name = "Mandrill"}
             };
         }
