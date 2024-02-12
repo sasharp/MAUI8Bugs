@@ -1,5 +1,4 @@
-﻿using System.Data;
-
+﻿
 namespace MAUI8Bugs
 {
     public partial class MainPage : ContentPage
@@ -7,7 +6,7 @@ namespace MAUI8Bugs
         public MainPage()
         {
             InitializeComponent();
-            collectionView.ItemsSource = new List<Animal>() { 
+            var list = new List<Animal>() { 
                 new Animal() {Name = "Capuchin Monkey"}, 
                 new Animal() {Name = "Squirrel Monkey"},
                 new Animal() {Name = "Howler Monkey"},
@@ -19,11 +18,24 @@ namespace MAUI8Bugs
                 new Animal() {Name = "Japanese Monkey"},
                 new Animal() {Name = "Mandrill"}
             };
+            for (int i = 0; i < 250; i++)
+            {
+                list.Add(new Animal()
+                {
+                    Name = "Mandrill"
+                });
+            }
+            collectionView.ItemsSource = list;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
             Shell.Current.GoToAsync("subpage");
+        }
+
+        private async void collectionView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            await Shell.Current.GoToAsync("subpage");
         }
     }
 

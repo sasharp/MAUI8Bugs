@@ -3,38 +3,38 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MAUI8Bugs.MainPage"
              xmlns:controls="clr-namespace:MAUI8Bugs">
-	<Shell.SearchHandler>
-		<controls:CustomSearchHandler Placeholder="Enter search term"
+    <Shell.SearchHandler>
+        <controls:CustomSearchHandler Placeholder="Enter search term"
                                       ShowsResults="true"
                                       DisplayMemberName="Name" />
-	</Shell.SearchHandler>
-	<Grid Grid.Row="2" Margin="0,5,0,0" HorizontalOptions="Fill" Grid.ColumnSpan="1">
-		<Grid.RowDefinitions>
-			<RowDefinition Height="auto"/>
-			<RowDefinition Height="*"/>
-			<RowDefinition Height="auto"/>
-		</Grid.RowDefinitions>
-		<Button Text="Go to SubPage >" Grid.Row="0" Clicked="Button_Clicked" WidthRequest="500"></Button>
-		<CollectionView Grid.Row="1" x:Name="collectionView">
-			<CollectionView.ItemTemplate>
-				<DataTemplate>
-					<Grid Padding="10">
-						<Border>
-							<VerticalStackLayout BackgroundColor="Aqua">
-								<Label Grid.Column="1"
+    </Shell.SearchHandler>
+    <Grid Grid.Row="2" Margin="0,5,0,0" HorizontalOptions="Fill" Grid.ColumnSpan="1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <Button Text="Go to SubPage >" Grid.Row="0" Clicked="Button_Clicked" WidthRequest="500"></Button>
+            <CollectionView x:Name="collectionView"  Grid.Row="1" SelectionChanged="collectionView_SelectionChanged" SelectionMode="Single">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10">
+                            <Border>
+                                <VerticalStackLayout BackgroundColor="Aqua">
+                                    <Label Grid.Column="1"
 						   Text="{Binding Name}"
 						   FontAttributes="Bold" />
-								<Line HeightRequest="5"/>
-								<Label Grid.Row="1"
+                                    <Line HeightRequest="5"/>
+                                    <Label Grid.Row="1"
                        Grid.Column="1"
                        Text="↑↑↑ the line is not showing here ↑↑↑"
                        VerticalOptions="End" />
-							</VerticalStackLayout>
-						</Border>
-					</Grid>
-				</DataTemplate>
-			</CollectionView.ItemTemplate>
-		</CollectionView>
-		<Button Text="Go to SubPage >" Grid.Row="2" Clicked="Button_Clicked" WidthRequest="500"></Button>
-	</Grid>
+                                </VerticalStackLayout>
+                            </Border>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        <Button Text="Go to SubPage >" Grid.Row="2" Clicked="Button_Clicked" WidthRequest="500"></Button>
+    </Grid>
 </ContentPage>
