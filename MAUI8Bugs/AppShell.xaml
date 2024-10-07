@@ -6,10 +6,10 @@
     xmlns:local="clr-namespace:MAUI8Bugs"
     Title="MAUI8Bugs">
 
-    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+    <!--<FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Title="Home" ContentTemplate="{DataTemplate local:MainPage}"/>
         <ShellContent Title="NewPage1" ContentTemplate="{DataTemplate local:Page2}"/>
-    </FlyoutItem>
+    </FlyoutItem>-->
 
     <!-- Tabs -->
     <TabBar Route="tab1">
